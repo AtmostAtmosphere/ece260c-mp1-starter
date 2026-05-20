@@ -1,0 +1,6 @@
+MP1 logical-equivalence summary
+generated: Tue May 19 03:45:27 PM PDT 2026
+
+  PASS (7): gcd_v1 ibex_v1 ibex_v2 jpeg_v1 jpeg_v2 riscv32i_v1 riscv32i_v2
+  FAIL (0): none
+  SKIP (0): none

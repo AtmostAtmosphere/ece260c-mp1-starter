@@ -1,0 +1,9 @@
+{
+  "design": "riscv32i_v2",
+  "results": {
+    "passed_count": 36,
+    "failed_count": 0,
+    "all_passed": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "design": "jpeg_v2",
+  "instance_count": 77197,
+  "total_area": 904910.23,
+  "total_ffs": 4342,
+  "mbff_count": 19,
+  "single_ff_count": 4323,
+  "mbff_ratio": 0.004375863657300783,
+  "mbff_masters": {
+    "sg13g2_dfrbpq_H2V2X_1": 15,
+    "sg13g2_dfrbpq_V2X_1": 4
+  },
+  "empty_pins": 7,
+  "clock_buffer_count": 373,
+  "sink_count": 4342,
+  "total_wirelength": 3657.18,
+  "static_power": 1.1e-05,
+  "total_power": 0.255921,
+  "displacement": {
+    "total_um": 172709.33,
+    "max_um": 14.09,
+    "mean_um": 2.24
+  },
+  "missing_comb_cells": [],
+  "added_comb_cells": [],
+  "half_connected_pin_pairs": 0,
+  "expected_clock_period": 5.13,
+  "total_negative_slack": -0.41
+}

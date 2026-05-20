@@ -1,0 +1,725 @@
+OpenROAD 26Q1-1636-g52ff2a5ea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ORD-0039] .openroad ignored with -python
+[INFO ORD-0030] Using 8 thread(s).
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 155, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 156, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 157, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 158, wireload 2.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 159, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 160, wireload 10.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 161, wireload 30.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 162, wireload 50.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 163, wireload 100.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 164, wireload 200.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 165, wireload 500.0k not found.
+[WARNING ORD-2056] The following 7 liberty cell(s) do not have LEF masters and will be marked as dont-use:
+  sg13g2_dfrbp_H2V2X_1
+  sg13g2_dfrbp_H2V2X_2
+  sg13g2_dfrbp_V2X_1
+  sg13g2_dfrbp_V2X_2
+  sg13g2_dfrbp_V4X_1
+  sg13g2_dfrbp_V4X_2
+  sg13g2_dfrbpq_H2V2X_2
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+[INFO CTS-0050] Root buffer is sg13g2_buf_8.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_8
+                    sg13g2_buf_16
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_16.
+[INFO CTS-0007] Net "clk" found for clock "core_clock".
+[INFO CTS-0010]  Clock net "clk" has 35 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 2 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 35.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0023]  Original sink region: [(51191, 51876), (144125, 132805)].
+[INFO CTS-0024]  Normalized sink region: [(2.70852, 2.74476), (7.62566, 7.02672)].
+[INFO CTS-0025]     Width:  4.9171.
+[INFO CTS-0026]     Height: 4.2820.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 18
+    Sub-region size: 2.4586 X 4.2820
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 9
+    Sub-region size: 2.4586 X 2.1410
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 5
+    Sub-region size: 1.2293 X 2.1410
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 35.
+[INFO CTS-0018]     Created 9 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 9 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:5, 5:3..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 40
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 194.40 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 5
+Placement Analysis
+---------------------------------
+total displacement       1266.0 u
+average displacement        2.9 u
+max displacement            9.4 u
+original HPWL            8584.1 u
+legalized HPWL           9702.7 u
+delta HPWL                   13 %
+
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       467
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            9702.7 u
+legalized HPWL           9702.7 u
+delta HPWL                    0 %
+
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove SplitLoadMove 
+[INFO RSZ-0094] Found 38 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 38 out of 38 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -0.390 |       -4.6 |     38 | resp_msg[15]
+       10 |       0 |       0 |        5 |      0 |     5 |    +0.6% |   -0.267 |       -4.0 |     38 | resp_msg[14]
+       20 |       0 |       0 |       15 |      0 |     9 |    +1.9% |   -0.213 |       -4.6 |     38 | resp_msg[15]
+       30 |       0 |       1 |       19 |      0 |    14 |    +2.5% |   -0.164 |       -2.8 |     38 | resp_msg[13]
+       40 |       0 |       6 |       23 |      0 |    17 |    +3.3% |   -0.169 |       -3.2 |     38 | resp_msg[12]
+       50 |       0 |      10 |       28 |      0 |    19 |    +4.3% |   -0.165 |       -2.0 |     38 | resp_msg[15]
+       57 |       0 |      11 |       34 |      0 |    22 |    +5.1% |   -0.136 |       -1.9 |     38 | resp_msg[13]
+       60 |       0 |      12 |       34 |      0 |    23 |    +5.1% |   -0.136 |       -1.9 |     38 | resp_msg[7]
+       61 |       0 |      11 |       34 |      0 |    22 |    +5.1% |   -0.136 |       -1.9 |     38 | resp_msg[13]
+       63 |       0 |      12 |       34 |      0 |    22 |    +5.1% |   -0.136 |       -1.9 |     38 | resp_msg[13]
+       70 |       0 |      14 |       36 |      0 |    24 |    +5.4% |   -0.136 |       -1.2 |     38 | resp_msg[13]
+       70 |       0 |      14 |       36 |      0 |    24 |    +5.4% |   -0.136 |       -1.2 |     38 | resp_msg[13]
+       71 |       0 |      14 |       36 |      0 |    24 |    +5.4% |   -0.136 |       -1.2 |     38 | resp_msg[13]
+       76 |       0 |      16 |       36 |      0 |    26 |    +5.5% |   -0.136 |       -1.2 |     38 | resp_msg[13]
+       80 |       0 |      16 |       36 |      0 |    29 |    +5.5% |   -0.136 |       -1.1 |     38 | resp_msg[13]
+       90 |       0 |      19 |       39 |      0 |    33 |    +6.0% |   -0.136 |       -1.0 |     38 | resp_msg[13]
+      100 |       0 |      21 |       44 |      0 |    37 |    +6.7% |   -0.136 |       -1.0 |     38 | resp_msg[13]
+      101 |       0 |      16 |       36 |      0 |    27 |    +5.5% |   -0.136 |       -1.2 |     38 | resp_msg[13]
+      104 |       0 |      17 |       37 |      0 |    27 |    +5.6% |   -0.136 |       -1.1 |     38 | resp_msg[13]
+      105 |       0 |      17 |       37 |      0 |    27 |    +5.6% |   -0.136 |       -1.1 |     37 | resp_msg[13]
+      108 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     35 | resp_msg[13]
+      109 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     34 | resp_msg[13]
+      110 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     34 | resp_msg[13]
+      110 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     33 | resp_msg[13]
+      111 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     32 | resp_msg[13]
+      112 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     31 | resp_msg[13]
+      113 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     30 | resp_msg[13]
+      114 |       0 |      17 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     29 | resp_msg[13]
+      116 |       0 |      18 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     29 | resp_msg[13]
+      117 |       0 |      18 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -1.0 |     28 | resp_msg[13]
+      119 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     26 | resp_msg[13]
+      120 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     26 | resp_msg[13]
+      120 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     25 | resp_msg[13]
+      121 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     24 | resp_msg[13]
+      122 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     23 | resp_msg[13]
+      123 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     22 | resp_msg[13]
+      124 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     21 | resp_msg[13]
+      125 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     20 | resp_msg[13]
+      126 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     19 | resp_msg[13]
+      127 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     18 | resp_msg[13]
+      128 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     17 | resp_msg[13]
+      129 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     16 | resp_msg[13]
+      130 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     16 | resp_msg[13]
+      130 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     15 | resp_msg[13]
+      131 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     14 | resp_msg[13]
+      132 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     13 | resp_msg[13]
+      133 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     12 | resp_msg[13]
+      134 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     11 | resp_msg[13]
+      135 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |     10 | resp_msg[13]
+      136 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+      137 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      8 | resp_msg[13]
+      138 |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      7 | resp_msg[13]
+     139* |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     140* |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     140* |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     141* |       0 |      19 |       38 |      0 |    28 |    +5.8% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     146* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     147* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     148* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     149* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     150* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     150* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+     151* |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+    final |       0 |      23 |       38 |      0 |    28 |    +6.0% |   -0.136 |       -0.8 |      9 | resp_msg[13]
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 38 buffers.
+[INFO RSZ-0051] Resized 23 instances: 23 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 28 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement        534.9 u
+average displacement        1.1 u
+max displacement           21.9 u
+original HPWL            9929.4 u
+legalized HPWL          10491.7 u
+delta HPWL                    6 %
+
+[INFO GRT-0237] Net resp_msg[6] global route wire length: 72.00um
+[INFO GRT-0237] Net _001_ global route wire length: 72.00um
+[INFO GRT-0237] Net _002_ global route wire length: 86.40um
+[INFO GRT-0237] Net _003_ global route wire length: 100.80um
+[INFO GRT-0237] Net _004_ global route wire length: 108.00um
+[INFO GRT-0237] Net _005_ global route wire length: 100.80um
+[INFO GRT-0237] Net _006_ global route wire length: 100.80um
+[INFO GRT-0237] Net _007_ global route wire length: 86.40um
+[INFO GRT-0237] Net _008_ global route wire length: 86.40um
+[INFO GRT-0237] Net _009_ global route wire length: 43.20um
+[INFO GRT-0237] Net _010_ global route wire length: 72.00um
+[INFO GRT-0237] Net _011_ global route wire length: 86.40um
+[INFO GRT-0237] Net _012_ global route wire length: 28.80um
+[INFO GRT-0237] Net _013_ global route wire length: 64.80um
+[INFO GRT-0237] Net _014_ global route wire length: 72.00um
+[INFO GRT-0237] Net _015_ global route wire length: 79.20um
+[INFO GRT-0237] Net _016_ global route wire length: 79.20um
+[INFO GRT-0237] Net _017_ global route wire length: 57.60um
+[INFO GRT-0237] Net _018_ global route wire length: 79.20um
+[INFO GRT-0237] Net _019_ global route wire length: 57.60um
+[INFO GRT-0237] Net _020_ global route wire length: 79.20um
+[INFO GRT-0237] Net _021_ global route wire length: 50.40um
+[INFO GRT-0237] Net _022_ global route wire length: 36.00um
+[INFO GRT-0237] Net _023_ global route wire length: 43.20um
+[INFO GRT-0237] Net _024_ global route wire length: 72.00um
+[INFO GRT-0237] Net _025_ global route wire length: 64.80um
+[INFO GRT-0237] Net _026_ global route wire length: 100.80um
+[INFO GRT-0237] Net _027_ global route wire length: 72.00um
+[INFO GRT-0237] Net _028_ global route wire length: 72.00um
+[INFO GRT-0237] Net _029_ global route wire length: 100.80um
+[INFO GRT-0237] Net _030_ global route wire length: 86.40um
+[INFO GRT-0237] Net _031_ global route wire length: 50.40um
+[INFO GRT-0237] Net _032_ global route wire length: 72.00um
+[INFO GRT-0237] Net _033_ global route wire length: 100.80um
+[INFO GRT-0237] Net _034_ global route wire length: 28.80um
+[INFO GRT-0237] Net _035_ global route wire length: 28.80um
+[INFO GRT-0237] Net _036_ global route wire length: 0.00um
+[INFO GRT-0237] Net _037_ global route wire length: 28.80um
+[INFO GRT-0237] Net _038_ global route wire length: 14.40um
+[INFO GRT-0237] Net _039_ global route wire length: 0.00um
+[INFO GRT-0237] Net _040_ global route wire length: 0.00um
+[INFO GRT-0237] Net _041_ global route wire length: 14.40um
+[INFO GRT-0237] Net _042_ global route wire length: 0.00um
+[INFO GRT-0237] Net _043_ global route wire length: 0.00um
+[INFO GRT-0237] Net _044_ global route wire length: 0.00um
+[INFO GRT-0237] Net _045_ global route wire length: 28.80um
+[INFO GRT-0237] Net _046_ global route wire length: 0.00um
+[INFO GRT-0237] Net _047_ global route wire length: 21.60um
+[INFO GRT-0237] Net _048_ global route wire length: 0.00um
+[INFO GRT-0237] Net _049_ global route wire length: 194.40um
+[INFO GRT-0237] Net _050_ global route wire length: 28.80um
+[INFO GRT-0237] Net _051_ global route wire length: 21.60um
+[INFO GRT-0237] Net _052_ global route wire length: 72.00um
+[INFO GRT-0237] Net _053_ global route wire length: 43.20um
+[INFO GRT-0237] Net _054_ global route wire length: 64.80um
+[INFO GRT-0237] Net _055_ global route wire length: 14.40um
+[INFO GRT-0237] Net _056_ global route wire length: 14.40um
+[INFO GRT-0237] Net _057_ global route wire length: 28.80um
+[INFO GRT-0237] Net _058_ global route wire length: 21.60um
+[INFO GRT-0237] Net _059_ global route wire length: 14.40um
+[INFO GRT-0237] Net _060_ global route wire length: 0.00um
+[INFO GRT-0237] Net _061_ global route wire length: 14.40um
+[INFO GRT-0237] Net _062_ global route wire length: 0.00um
+[INFO GRT-0237] Net _063_ global route wire length: 28.80um
+[INFO GRT-0237] Net _064_ global route wire length: 14.40um
+[INFO GRT-0237] Net _065_ global route wire length: 0.00um
+[INFO GRT-0237] Net _066_ global route wire length: 0.00um
+[INFO GRT-0237] Net _067_ global route wire length: 0.00um
+[INFO GRT-0237] Net _068_ global route wire length: 14.40um
+[INFO GRT-0237] Net _069_ global route wire length: 14.40um
+[INFO GRT-0237] Net _070_ global route wire length: 14.40um
+[INFO GRT-0237] Net _071_ global route wire length: 14.40um
+[INFO GRT-0237] Net _072_ global route wire length: 28.80um
+[INFO GRT-0237] Net _073_ global route wire length: 0.00um
+[INFO GRT-0237] Net _074_ global route wire length: 28.80um
+[INFO GRT-0237] Net _075_ global route wire length: 14.40um
+[INFO GRT-0237] Net _076_ global route wire length: 28.80um
+[INFO GRT-0237] Net _077_ global route wire length: 28.80um
+[INFO GRT-0237] Net _078_ global route wire length: 28.80um
+[INFO GRT-0237] Net _079_ global route wire length: 0.00um
+[INFO GRT-0237] Net _080_ global route wire length: 0.00um
+[INFO GRT-0237] Net _081_ global route wire length: 0.00um
+[INFO GRT-0237] Net _082_ global route wire length: 0.00um
+[INFO GRT-0237] Net _083_ global route wire length: 28.80um
+[INFO GRT-0237] Net _084_ global route wire length: 14.40um
+[INFO GRT-0237] Net _085_ global route wire length: 28.80um
+[INFO GRT-0237] Net _086_ global route wire length: 0.00um
+[INFO GRT-0237] Net _087_ global route wire length: 0.00um
+[INFO GRT-0237] Net _088_ global route wire length: 14.40um
+[INFO GRT-0237] Net _089_ global route wire length: 0.00um
+[INFO GRT-0237] Net _090_ global route wire length: 14.40um
+[INFO GRT-0237] Net _091_ global route wire length: 14.40um
+[INFO GRT-0237] Net _092_ global route wire length: 0.00um
+[INFO GRT-0237] Net _093_ global route wire length: 0.00um
+[INFO GRT-0237] Net _094_ global route wire length: 0.00um
+[INFO GRT-0237] Net _095_ global route wire length: 14.40um
+[INFO GRT-0237] Net _096_ global route wire length: 0.00um
+[INFO GRT-0237] Net _097_ global route wire length: 28.80um
+[INFO GRT-0237] Net _098_ global route wire length: 0.00um
+[INFO GRT-0237] Net _099_ global route wire length: 28.80um
+[INFO GRT-0237] Net _100_ global route wire length: 0.00um
+[INFO GRT-0237] Net _101_ global route wire length: 14.40um
+[INFO GRT-0237] Net _102_ global route wire length: 28.80um
+[INFO GRT-0237] Net _103_ global route wire length: 14.40um
+[INFO GRT-0237] Net _104_ global route wire length: 43.20um
+[INFO GRT-0237] Net _105_ global route wire length: 14.40um
+[INFO GRT-0237] Net _106_ global route wire length: 0.00um
+[INFO GRT-0237] Net _107_ global route wire length: 0.00um
+[INFO GRT-0237] Net _108_ global route wire length: 14.40um
+[INFO GRT-0237] Net _109_ global route wire length: 0.00um
+[INFO GRT-0237] Net _110_ global route wire length: 0.00um
+[INFO GRT-0237] Net _111_ global route wire length: 14.40um
+[INFO GRT-0237] Net _112_ global route wire length: 14.40um
+[INFO GRT-0237] Net _113_ global route wire length: 14.40um
+[INFO GRT-0237] Net _114_ global route wire length: 0.00um
+[INFO GRT-0237] Net _115_ global route wire length: 14.40um
+[INFO GRT-0237] Net _116_ global route wire length: 43.20um
+[INFO GRT-0237] Net _117_ global route wire length: 14.40um
+[INFO GRT-0237] Net _118_ global route wire length: 14.40um
+[INFO GRT-0237] Net _119_ global route wire length: 0.00um
+[INFO GRT-0237] Net _120_ global route wire length: 14.40um
+[INFO GRT-0237] Net _121_ global route wire length: 14.40um
+[INFO GRT-0237] Net _122_ global route wire length: 14.40um
+[INFO GRT-0237] Net _123_ global route wire length: 0.00um
+[INFO GRT-0237] Net _124_ global route wire length: 14.40um
+[INFO GRT-0237] Net _125_ global route wire length: 0.00um
+[INFO GRT-0237] Net _126_ global route wire length: 0.00um
+[INFO GRT-0237] Net _127_ global route wire length: 14.40um
+[INFO GRT-0237] Net _128_ global route wire length: 14.40um
+[INFO GRT-0237] Net _129_ global route wire length: 0.00um
+[INFO GRT-0237] Net _130_ global route wire length: 14.40um
+[INFO GRT-0237] Net _131_ global route wire length: 14.40um
+[INFO GRT-0237] Net _132_ global route wire length: 14.40um
+[INFO GRT-0237] Net _133_ global route wire length: 0.00um
+[INFO GRT-0237] Net _134_ global route wire length: 0.00um
+[INFO GRT-0237] Net _135_ global route wire length: 14.40um
+[INFO GRT-0237] Net _136_ global route wire length: 14.40um
+[INFO GRT-0237] Net _137_ global route wire length: 14.40um
+[INFO GRT-0237] Net _138_ global route wire length: 14.40um
+[INFO GRT-0237] Net _139_ global route wire length: 36.00um
+[INFO GRT-0237] Net _140_ global route wire length: 14.40um
+[INFO GRT-0237] Net _141_ global route wire length: 14.40um
+[INFO GRT-0237] Net _142_ global route wire length: 14.40um
+[INFO GRT-0237] Net _143_ global route wire length: 14.40um
+[INFO GRT-0237] Net _144_ global route wire length: 21.60um
+[INFO GRT-0237] Net _145_ global route wire length: 0.00um
+[INFO GRT-0237] Net _146_ global route wire length: 0.00um
+[INFO GRT-0237] Net _147_ global route wire length: 28.80um
+[INFO GRT-0237] Net _148_ global route wire length: 14.40um
+[INFO GRT-0237] Net _149_ global route wire length: 0.00um
+[INFO GRT-0237] Net _150_ global route wire length: 14.40um
+[INFO GRT-0237] Net _151_ global route wire length: 14.40um
+[INFO GRT-0237] Net _152_ global route wire length: 28.80um
+[INFO GRT-0237] Net _153_ global route wire length: 0.00um
+[INFO GRT-0237] Net _154_ global route wire length: 28.80um
+[INFO GRT-0237] Net _155_ global route wire length: 0.00um
+[INFO GRT-0237] Net _156_ global route wire length: 14.40um
+[INFO GRT-0237] Net _157_ global route wire length: 43.20um
+[INFO GRT-0237] Net _158_ global route wire length: 0.00um
+[INFO GRT-0237] Net _159_ global route wire length: 14.40um
+[INFO GRT-0237] Net _160_ global route wire length: 0.00um
+[INFO GRT-0237] Net _161_ global route wire length: 0.00um
+[INFO GRT-0237] Net _162_ global route wire length: 0.00um
+[INFO GRT-0237] Net _163_ global route wire length: 0.00um
+[INFO GRT-0237] Net _164_ global route wire length: 14.40um
+[INFO GRT-0237] Net _165_ global route wire length: 14.40um
+[INFO GRT-0237] Net _166_ global route wire length: 14.40um
+[INFO GRT-0237] Net net35 global route wire length: 57.60um
+[INFO GRT-0237] Net net36 global route wire length: 28.80um
+[INFO GRT-0237] Net net37 global route wire length: 14.40um
+[INFO GRT-0237] Net net38 global route wire length: 21.60um
+[INFO GRT-0237] Net net39 global route wire length: 14.40um
+[INFO GRT-0237] Net net40 global route wire length: 43.20um
+[INFO GRT-0237] Net net41 global route wire length: 36.00um
+[INFO GRT-0237] Net net42 global route wire length: 43.20um
+[INFO GRT-0237] Net net43 global route wire length: 28.80um
+[INFO GRT-0237] Net net44 global route wire length: 14.40um
+[INFO GRT-0237] Net net45 global route wire length: 14.40um
+[INFO GRT-0237] Net net46 global route wire length: 21.60um
+[INFO GRT-0237] Net net47 global route wire length: 14.40um
+[INFO GRT-0237] Net net48 global route wire length: 0.00um
+[INFO GRT-0237] Net net49 global route wire length: 0.00um
+[INFO GRT-0237] Net net50 global route wire length: 43.20um
+[INFO GRT-0237] Net net51 global route wire length: 50.40um
+[INFO GRT-0237] Net net52 global route wire length: 64.80um
+[INFO GRT-0237] Net net53 global route wire length: 43.20um
+[INFO GRT-0237] Net net54 global route wire length: 50.40um
+[INFO GRT-0237] Net net55 global route wire length: 36.00um
+[INFO GRT-0237] Net net56 global route wire length: 14.40um
+[INFO GRT-0237] Net net57 global route wire length: 50.40um
+[INFO GRT-0237] Net net58 global route wire length: 0.00um
+[INFO GRT-0237] Net net59 global route wire length: 14.40um
+[INFO GRT-0237] Net net60 global route wire length: 21.60um
+[INFO GRT-0237] Net net61 global route wire length: 36.00um
+[INFO GRT-0237] Net net62 global route wire length: 57.60um
+[INFO GRT-0237] Net net63 global route wire length: 50.40um
+[INFO GRT-0237] Net net64 global route wire length: 28.80um
+[INFO GRT-0237] Net net65 global route wire length: 43.20um
+[INFO GRT-0237] Net net66 global route wire length: 0.00um
+[INFO GRT-0237] Net net70 global route wire length: 108.00um
+[INFO GRT-0237] Net net67 global route wire length: 14.40um
+[INFO GRT-0237] Net net68 global route wire length: 43.20um
+[INFO GRT-0237] Net net71 global route wire length: 21.60um
+[INFO GRT-0237] Net net72 global route wire length: 14.40um
+[INFO GRT-0237] Net net73 global route wire length: 0.00um
+[INFO GRT-0237] Net net74 global route wire length: 57.60um
+[INFO GRT-0237] Net net75 global route wire length: 72.00um
+[INFO GRT-0237] Net net76 global route wire length: 50.40um
+[INFO GRT-0237] Net net77 global route wire length: 57.60um
+[INFO GRT-0237] Net net78 global route wire length: 57.60um
+[INFO GRT-0237] Net net79 global route wire length: 64.80um
+[INFO GRT-0237] Net net80 global route wire length: 64.80um
+[INFO GRT-0237] Net net81 global route wire length: 93.60um
+[INFO GRT-0237] Net net82 global route wire length: 72.00um
+[INFO GRT-0237] Net net83 global route wire length: 28.80um
+[INFO GRT-0237] Net net84 global route wire length: 72.00um
+[INFO GRT-0237] Net net85 global route wire length: 64.80um
+[INFO GRT-0237] Net net86 global route wire length: 14.40um
+[INFO GRT-0237] Net net69 global route wire length: 36.00um
+[INFO GRT-0237] Net net87 global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_056_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_055_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[5] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_054_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_053_ global route wire length: 64.80um
+[INFO GRT-0237] Net _167_/_052_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[4] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_051_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_050_ global route wire length: 14.40um
+[INFO GRT-0237] Net resp_msg[3] global route wire length: 79.20um
+[INFO GRT-0237] Net _167_/_049_ global route wire length: 14.40um
+[INFO GRT-0237] Net resp_msg[2] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_048_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_047_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[1] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_046_ global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_045_ global route wire length: 0.00um
+[INFO GRT-0237] Net resp_msg[15] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_044_ global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_043_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[14] global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_042_ global route wire length: 43.20um
+[INFO GRT-0237] Net resp_msg[13] global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_041_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_040_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[12] global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_039_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_038_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_037_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_036_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_035_ global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_034_ global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_033_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_032_ global route wire length: 14.40um
+[INFO GRT-0237] Net resp_msg[11] global route wire length: 115.20um
+[INFO GRT-0237] Net _167_/_031_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_030_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_029_ global route wire length: 43.20um
+[INFO GRT-0237] Net resp_msg[10] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_028_ global route wire length: 0.00um
+[INFO GRT-0237] Net resp_msg[0] global route wire length: 50.40um
+[INFO GRT-0237] Net req_rdy global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_027_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_026_ global route wire length: 28.80um
+[INFO GRT-0237] Net resp_rdy global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_025_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_024_ global route wire length: 72.00um
+[INFO GRT-0237] Net reset global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_023_ global route wire length: 64.80um
+[INFO GRT-0237] Net _167_/_022_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_val global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_021_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[9] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_020_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_019_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[8] global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_018_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_017_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_016_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_015_ global route wire length: 79.20um
+[INFO GRT-0237] Net _167_/_014_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_013_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_102_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_012_ global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_011_ global route wire length: 57.60um
+[INFO GRT-0237] Net req_msg[7] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_010_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_009_ global route wire length: 36.00um
+[INFO GRT-0237] Net req_msg[6] global route wire length: 21.60um
+[INFO GRT-0237] Net req_msg[5] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_008_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_007_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[4] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_006_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_116_ global route wire length: 64.80um
+[INFO GRT-0237] Net _167_/_005_ global route wire length: 79.20um
+[INFO GRT-0237] Net req_msg[3] global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_004_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_003_ global route wire length: 0.00um
+[INFO GRT-0237] Net req_msg[31] global route wire length: 43.20um
+[INFO GRT-0237] Net req_msg[30] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_057_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[2] global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_124_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_090_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_002_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_122_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_001_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_111_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_123_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_105_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_063_ global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_060_ global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_000_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_059_ global route wire length: 43.20um
+[INFO GRT-0237] Net net_1 global route wire length: 374.40um
+[INFO GRT-0237] Net net_2 global route wire length: 28.80um
+[INFO GRT-0237] Net net global route wire length: 0.00um
+[INFO GRT-0237] Net net1 global route wire length: 0.00um
+[INFO GRT-0237] Net net2 global route wire length: 0.00um
+[INFO GRT-0237] Net net3 global route wire length: 14.40um
+[INFO GRT-0237] Net net4 global route wire length: 0.00um
+[INFO GRT-0237] Net net5 global route wire length: 0.00um
+[INFO GRT-0237] Net net6 global route wire length: 14.40um
+[INFO GRT-0237] Net net7 global route wire length: 0.00um
+[INFO GRT-0237] Net net8 global route wire length: 0.00um
+[INFO GRT-0237] Net net9 global route wire length: 14.40um
+[INFO GRT-0237] Net net10 global route wire length: 14.40um
+[INFO GRT-0237] Net net11 global route wire length: 14.40um
+[INFO GRT-0237] Net net12 global route wire length: 14.40um
+[INFO GRT-0237] Net net13 global route wire length: 14.40um
+[INFO GRT-0237] Net net14 global route wire length: 0.00um
+[INFO GRT-0237] Net net15 global route wire length: 0.00um
+[INFO GRT-0237] Net net16 global route wire length: 14.40um
+[INFO GRT-0237] Net net17 global route wire length: 14.40um
+[INFO GRT-0237] Net net18 global route wire length: 0.00um
+[INFO GRT-0237] Net net19 global route wire length: 14.40um
+[INFO GRT-0237] Net net20 global route wire length: 0.00um
+[INFO GRT-0237] Net net21 global route wire length: 0.00um
+[INFO GRT-0237] Net net22 global route wire length: 28.80um
+[INFO GRT-0237] Net net23 global route wire length: 0.00um
+[INFO GRT-0237] Net net24 global route wire length: 14.40um
+[INFO GRT-0237] Net net25 global route wire length: 28.80um
+[INFO GRT-0237] Net net26 global route wire length: 0.00um
+[INFO GRT-0237] Net net27 global route wire length: 14.40um
+[INFO GRT-0237] Net net28 global route wire length: 14.40um
+[INFO GRT-0237] Net net29 global route wire length: 14.40um
+[INFO GRT-0237] Net net30 global route wire length: 28.80um
+[INFO GRT-0237] Net net31 global route wire length: 0.00um
+[INFO GRT-0237] Net net32 global route wire length: 14.40um
+[INFO GRT-0237] Net net33 global route wire length: 14.40um
+[INFO GRT-0237] Net net34 global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[29] global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_058_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[28] global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_061_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[27] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_062_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[26] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_064_ global route wire length: 43.20um
+[INFO GRT-0237] Net req_msg[25] global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_065_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_066_ global route wire length: 36.00um
+[INFO GRT-0237] Net req_msg[24] global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_067_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_068_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_069_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_070_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_071_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_072_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_073_ global route wire length: 64.80um
+[INFO GRT-0237] Net _167_/_074_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_075_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_076_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[23] global route wire length: 21.60um
+[INFO GRT-0237] Net req_msg[22] global route wire length: 79.20um
+[INFO GRT-0237] Net req_msg[21] global route wire length: 43.20um
+[INFO GRT-0237] Net req_msg[20] global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_077_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_078_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_079_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[1] global route wire length: 50.40um
+[INFO GRT-0237] Net req_msg[19] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_080_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_081_ global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_082_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_083_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[18] global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_084_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_085_ global route wire length: 0.00um
+[INFO GRT-0237] Net req_msg[17] global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_086_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_087_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_088_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_089_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[16] global route wire length: 21.60um
+[INFO GRT-0237] Net req_msg[15] global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_091_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_092_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_093_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_094_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_095_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[14] global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/_096_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_097_ global route wire length: 14.40um
+[INFO GRT-0237] Net req_msg[13] global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_098_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_099_ global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_100_ global route wire length: 36.00um
+[INFO GRT-0237] Net req_msg[12] global route wire length: 43.20um
+[INFO GRT-0237] Net _167_/_101_ global route wire length: 72.00um
+[INFO GRT-0237] Net req_msg[11] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_103_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_104_ global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/_106_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_107_ global route wire length: 28.80um
+[INFO GRT-0237] Net req_msg[10] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_108_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_109_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_110_ global route wire length: 64.80um
+[INFO GRT-0237] Net req_msg[0] global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_112_ global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/_113_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_114_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_115_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_117_ global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/_118_ global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/_119_ global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/_120_ global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/_121_ global route wire length: 21.60um
+[INFO GRT-0237] Net resp_msg[7] global route wire length: 28.80um
+[INFO GRT-0237] Net resp_msg[8] global route wire length: 72.00um
+[INFO GRT-0237] Net resp_msg[9] global route wire length: 64.80um
+[INFO GRT-0237] Net resp_val global route wire length: 21.60um
+[INFO GRT-0237] Net net143 global route wire length: 208.80um
+[INFO GRT-0237] Net _167_/net135 global route wire length: 36.00um
+[INFO GRT-0237] Net net139 global route wire length: 187.20um
+[INFO GRT-0237] Net net138 global route wire length: 237.60um
+[INFO GRT-0237] Net net141 global route wire length: 100.80um
+[INFO GRT-0237] Net net140 global route wire length: 151.20um
+[INFO GRT-0237] Net net130 global route wire length: 151.20um
+[INFO GRT-0237] Net net129 global route wire length: 100.80um
+[INFO GRT-0237] Net _167_/net149 global route wire length: 28.80um
+[INFO GRT-0237] Net net131 global route wire length: 136.80um
+[INFO GRT-0237] Net _167_/net147 global route wire length: 28.80um
+[INFO GRT-0237] Net net145 global route wire length: 115.20um
+[INFO GRT-0237] Net net146 global route wire length: 136.80um
+[INFO GRT-0237] Net _167_/net148 global route wire length: 72.00um
+[INFO GRT-0237] Net net144 global route wire length: 151.20um
+[INFO GRT-0237] Net net134 global route wire length: 165.60um
+[INFO GRT-0237] Net net133 global route wire length: 244.80um
+[INFO GRT-0237] Net net132 global route wire length: 86.40um
+[INFO GRT-0237] Net net137 global route wire length: 230.40um
+[INFO GRT-0237] Net net136 global route wire length: 50.40um
+[INFO GRT-0237] Net net142 global route wire length: 151.20um
+[INFO GRT-0237] Net _167_/net150 global route wire length: 14.40um
+[INFO GRT-0237] Net net151 global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/net152 global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/net153 global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/net154 global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/net155 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net156 global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/net157 global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/net158 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net159 global route wire length: 0.00um
+[INFO GRT-0237] Net _167_/net160 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net161 global route wire length: 28.80um
+[INFO GRT-0237] Net net162 global route wire length: 14.40um
+[INFO GRT-0237] Net net163 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net164 global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/net165 global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/net166 global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/net167 global route wire length: 50.40um
+[INFO GRT-0237] Net _167_/net168 global route wire length: 28.80um
+[INFO GRT-0237] Net net169 global route wire length: 14.40um
+[INFO GRT-0237] Net net170 global route wire length: 14.40um
+[INFO GRT-0237] Net net171 global route wire length: 21.60um
+[INFO GRT-0237] Net net172 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net173 global route wire length: 14.40um
+[INFO GRT-0237] Net _167_/net174 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net175 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net176 global route wire length: 57.60um
+[INFO GRT-0237] Net _167_/net177 global route wire length: 21.60um
+[INFO GRT-0237] Net _167_/net178 global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/net179 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net180 global route wire length: 14.40um
+[INFO GRT-0237] Net net181 global route wire length: 28.80um
+[INFO GRT-0237] Net _167_/net182 global route wire length: 21.60um
+[INFO GRT-0237] Net net191 global route wire length: 36.00um
+[INFO GRT-0237] Net _167_/net192 global route wire length: 21.60um
+Loading design from runs/gcd_v1/clustered.odb...
+$ source pdk/setRC.tcl
+$ read_sdc designs/gcd_v1/constraints.sdc
+$ source pdk/setRC.tcl
+$ read_sdc designs/gcd_v1/constraints.sdc
+$ clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+$ estimate_parasitics -placement
+$ detailed_placement
+$ global_route
+$ estimate_parasitics -global_routing
+$ repair_design
+$ global_route -start_incremental
+$ detailed_placement
+$ global_route -end_incremental
+$ estimate_parasitics -global_routing
+$ repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose -skip_gate_cloning
+$ global_route -start_incremental
+$ detailed_placement
+$ global_route -end_incremental
+$ global_route -start_incremental
+$ global_route -end_incremental
+$ estimate_parasitics -global_routing
+$ report_clock_min_period > /tmp/min_period_gcd_v1.txt
+$ report_tns > /tmp/tns_gcd_v1.txt
+$ report_cts -out_file /tmp/cts_gcd_v1.txt
+Report written to result/gcd_v1_report.json
+{
+  "design": "gcd_v1",
+  "instance_count": 417,
+  "total_area": 5737.13,
+  "total_ffs": 35,
+  "mbff_count": 0,
+  "single_ff_count": 35,
+  "mbff_ratio": 0.0,
+  "mbff_masters": {},
+  "empty_pins": 0,
+  "clock_buffer_count": 9,
+  "sink_count": 35,
+  "total_wirelength": 16.8,
+  "static_power": 0.0,
+  "total_power": 0.001994,
+  "displacement": {
+    "total_um": 1417.18,
+    "max_um": 22.45,
+    "mean_um": 3.4
+  },
+  "missing_comb_cells": [],
+  "added_comb_cells": [],
+  "half_connected_pin_pairs": 0,
+  "expected_clock_period": 2.03,
+  "total_negative_slack": -1.6
+}

@@ -1,0 +1,1703 @@
+OpenROAD 26Q1-1636-g52ff2a5ea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ORD-0039] .openroad ignored with -python
+[INFO ORD-0030] Using 8 thread(s).
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 155, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 156, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 157, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 158, wireload 2.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 159, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 160, wireload 10.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 161, wireload 30.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 162, wireload 50.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 163, wireload 100.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 164, wireload 200.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 165, wireload 500.0k not found.
+[WARNING ORD-2056] The following 7 liberty cell(s) do not have LEF masters and will be marked as dont-use:
+  sg13g2_dfrbp_H2V2X_1
+  sg13g2_dfrbp_H2V2X_2
+  sg13g2_dfrbp_V2X_1
+  sg13g2_dfrbp_V2X_2
+  sg13g2_dfrbp_V4X_1
+  sg13g2_dfrbp_V4X_2
+  sg13g2_dfrbpq_H2V2X_2
+[INFO CTS-0050] Root buffer is sg13g2_buf_16.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_16
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_16.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 4342 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 1 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 4342.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0206] Best clustering solution was found from clustering size of 8 and clustering diameter of 50.
+[INFO CTS-0019]  Total number of sinks after clustering: 296.
+[INFO CTS-0024]  Normalized sink region: [(2.16436, 2.25816), (75.8312, 75.9808)].
+[INFO CTS-0025]     Width:  73.6669.
+[INFO CTS-0026]     Height: 73.7226.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 148
+    Sub-region size: 73.6669 X 36.8613
+[INFO CTS-0034]     Segment length (rounded): 18.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 74
+    Sub-region size: 36.8334 X 36.8613
+[INFO CTS-0034]     Segment length (rounded): 18.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 37
+    Sub-region size: 36.8334 X 18.4306
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 19
+    Sub-region size: 18.4167 X 18.4306
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 10
+    Sub-region size: 18.4167 X 9.2153
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 6
+    Direction: Horizontal
+    Sinks per sub-region: 5
+    Sub-region size: 9.2084 X 9.2153
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 296.
+[INFO CTS-0018]     Created 373 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 5.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 5.
+[INFO CTS-0015]     Created 373 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:24, 5:40, 6:1, 7:5, 8:6, 9:7, 10:16, 11:14, 12:17, 13:15, 14:29, 15:50, 16:53, 17:44, 18:23, 19:12, 20:2, 21:1, 22:1..
+[INFO CTS-0017]     Max level of the clock tree: 6.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 4572
+[INFO CTS-0100]  Leaf buffers 296
+[INFO CTS-0101]  Average sink wire length 2541.25 um
+[INFO CTS-0102]  Path depth 4 - 5
+[INFO CTS-0207]  Dummy loads inserted 230
+[INFO RSZ-0047] Found 1 long wires.
+[INFO RSZ-0048] Inserted 1 buffers in 1 nets.
+Placement Analysis
+---------------------------------
+total displacement     173742.0 u
+average displacement        2.2 u
+max displacement           11.3 u
+original HPWL         2233611.3 u
+legalized HPWL        2370208.2 u
+delta HPWL                    6 %
+
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     77870
+    final |     +0.0% |       0 |       2 |             2 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0035] Found 2 fanout violations.
+[INFO RSZ-0038] Inserted 2 buffers in 2 nets.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL         2370346.5 u
+legalized HPWL        2370346.5 u
+delta HPWL                    0 %
+
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove SplitLoadMove 
+[INFO RSZ-0094] Found 389 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 389 out of 389 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -0.716 |      -84.6 |    389 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+       10 |       0 |       3 |        9 |      0 |     3 |    +0.0% |   -0.569 |      -75.8 |    389 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+       20 |       0 |      10 |       11 |      0 |     5 |    +0.0% |   -0.457 |      -69.0 |    389 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_0.macu.mult_res[17]$_DFFE_PP_/D
+       30 |       0 |      14 |       13 |      0 |     9 |    +0.0% |   -0.427 |      -66.2 |    389 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+       40 |       0 |      15 |       21 |      0 |    13 |    +0.0% |   -0.410 |      -63.6 |    389 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_1.macu.mult_res[17]$_DFFE_PP_/D
+       50 |       0 |      20 |       24 |      0 |    16 |    +0.0% |   -0.373 |      -61.1 |    389 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_7.macu.mult_res[18]$_DFFE_PP_/D
+       60 |       0 |      27 |       24 |      0 |    19 |    +0.0% |   -0.347 |      -52.7 |    389 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_1.macu.mult_res[17]$_DFFE_PP_/D
+       70 |       0 |      34 |       27 |      0 |    20 |    +0.0% |   -0.333 |      -51.4 |    389 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+       80 |       0 |      42 |       29 |      0 |    21 |    +0.0% |   -0.323 |      -48.5 |    389 | fdct_zigzag.dct_mod.dct_block_0.dct_unit_7.macu.result[21]$_DFFE_PP_/D
+       90 |       0 |      45 |       36 |      0 |    25 |    +0.1% |   -0.315 |      -47.0 |    389 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_1.macu.mult_res[17]$_DFFE_PP_/D
+      100 |       0 |      49 |       41 |      0 |    27 |    +0.1% |   -0.302 |      -46.1 |    389 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_7.macu.result[21]$_DFFE_PP_/D
+      110 |       0 |      53 |       44 |      0 |    31 |    +0.1% |   -0.299 |      -43.9 |    389 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_2.macu.mult_res[18]$_DFFE_PP_/D
+      120 |       0 |      54 |       49 |      0 |    36 |    +0.1% |   -0.289 |      -42.9 |    389 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      130 |       0 |      59 |       54 |      0 |    38 |    +0.1% |   -0.264 |      -40.1 |    389 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_1.macu.mult_res[17]$_DFFE_PP_/D
+      140 |       0 |      64 |       57 |      0 |    41 |    +0.1% |   -0.268 |      -38.8 |    389 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_3.macu.result[21]$_DFFE_PP_/D
+      150 |       0 |      69 |       60 |      0 |    43 |    +0.1% |   -0.250 |      -38.1 |    389 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_0.macu.mult_res[17]$_DFFE_PP_/D
+      160 |       0 |      75 |       61 |      0 |    46 |    +0.1% |   -0.245 |      -37.2 |    389 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_6.macu.mult_res[16]$_DFFE_PP_/D
+      170 |       0 |      77 |       67 |      0 |    50 |    +0.1% |   -0.237 |      -36.4 |    389 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      180 |       0 |      82 |       72 |      0 |    52 |    +0.1% |   -0.228 |      -34.8 |    389 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_4.macu.mult_res[18]$_DFFE_PP_/D
+      190 |       0 |      85 |       78 |      0 |    55 |    +0.1% |   -0.220 |      -33.8 |    389 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_6.macu.mult_res[16]$_DFFE_PP_/D
+      200 |       0 |      88 |       81 |      0 |    60 |    +0.1% |   -0.227 |      -33.1 |    389 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_5.macu.result[21]$_DFFE_PP_/D
+      210 |       0 |      92 |       87 |      0 |    62 |    +0.1% |   -0.207 |      -30.6 |    389 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_3.macu.mult_res[17]$_DFFE_PP_/D
+      220 |       0 |      95 |       89 |      0 |    67 |    +0.1% |   -0.205 |      -29.7 |    389 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      230 |       0 |      99 |       98 |      0 |    69 |    +0.1% |   -0.197 |      -28.4 |    389 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_0.macu.mult_res[17]$_DFFE_PP_/D
+      240 |       0 |     103 |      106 |      0 |    71 |    +0.2% |   -0.190 |      -26.5 |    389 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.mult_res[17]$_DFFE_PP_/D
+      245 |       0 |     107 |      108 |      0 |    71 |    +0.2% |   -0.184 |      -25.7 |    387 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      250 |       0 |     108 |      109 |      0 |    73 |    +0.2% |   -0.184 |      -24.8 |    387 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      260 |       0 |     114 |      114 |      0 |    74 |    +0.2% |   -0.211 |      -25.7 |    387 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      270 |       0 |     118 |      119 |      0 |    77 |    +0.2% |   -0.211 |      -25.3 |    387 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      280 |       0 |     121 |      122 |      0 |    81 |    +0.2% |   -0.211 |      -25.2 |    387 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.mult_res[17]$_DFFE_PP_/D
+      282 |       0 |     111 |      114 |      0 |    74 |    +0.2% |   -0.184 |      -24.8 |    386 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      285 |       0 |     113 |      114 |      0 |    74 |    +0.2% |   -0.184 |      -24.8 |    384 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      290 |       0 |     113 |      118 |      0 |    76 |    +0.2% |   -0.184 |      -24.8 |    384 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      298 |       0 |     113 |      122 |      0 |    80 |    +0.2% |   -0.184 |      -24.4 |    382 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      299 |       0 |     113 |      122 |      0 |    80 |    +0.2% |   -0.184 |      -24.4 |    381 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      300 |       0 |     113 |      122 |      0 |    80 |    +0.2% |   -0.184 |      -24.4 |    381 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      305 |       0 |     116 |      124 |      0 |    81 |    +0.2% |   -0.184 |      -24.1 |    379 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      310 |       0 |     117 |      125 |      0 |    83 |    +0.2% |   -0.184 |      -24.0 |    379 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      313 |       0 |     120 |      125 |      0 |    83 |    +0.2% |   -0.184 |      -24.0 |    377 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      314 |       0 |     120 |      125 |      0 |    83 |    +0.2% |   -0.184 |      -24.0 |    376 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      320 |       0 |     120 |      129 |      0 |    86 |    +0.2% |   -0.184 |      -24.0 |    376 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      327 |       0 |     123 |      131 |      0 |    88 |    +0.2% |   -0.184 |      -23.9 |    374 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      330 |       0 |     123 |      132 |      0 |    89 |    +0.2% |   -0.184 |      -23.9 |    374 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      340 |       0 |     131 |      134 |      0 |    90 |    +0.2% |   -0.184 |      -22.5 |    374 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      350 |       0 |     138 |      135 |      0 |    92 |    +0.2% |   -0.184 |      -22.4 |    374 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      360 |       0 |     142 |      141 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    374 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      368 |       0 |     148 |      146 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    372 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      369 |       0 |     148 |      146 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    371 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      370 |       0 |     148 |      146 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    371 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      370 |       0 |     148 |      146 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    370 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      371 |       0 |     148 |      146 |      0 |    95 |    +0.2% |   -0.184 |      -22.3 |    369 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      377 |       0 |     150 |      148 |      0 |    97 |    +0.2% |   -0.184 |      -22.1 |    367 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      380 |       0 |     151 |      148 |      0 |    98 |    +0.2% |   -0.184 |      -22.0 |    367 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      390 |       0 |     152 |      157 |      0 |    99 |    +0.2% |   -0.184 |      -22.0 |    367 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      400 |       0 |     152 |      167 |      0 |    99 |    +0.2% |   -0.184 |      -22.0 |    367 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      410 |       0 |     155 |      171 |      0 |   102 |    +0.2% |   -0.184 |      -21.7 |    367 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      411 |       0 |     156 |      171 |      0 |   102 |    +0.2% |   -0.184 |      -21.7 |    365 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      412 |       0 |     156 |      171 |      0 |   102 |    +0.2% |   -0.184 |      -21.7 |    364 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      413 |       0 |     156 |      171 |      0 |   102 |    +0.2% |   -0.184 |      -21.7 |    363 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      420 |       0 |     159 |      174 |      0 |   103 |    +0.2% |   -0.184 |      -21.6 |    363 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      426 |       0 |     158 |      174 |      0 |   103 |    +0.2% |   -0.184 |      -21.6 |    362 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      430 |       0 |     158 |      175 |      0 |   105 |    +0.2% |   -0.184 |      -21.6 |    362 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      440 |       0 |     165 |      177 |      0 |   106 |    +0.2% |   -0.184 |      -21.3 |    362 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      450 |       0 |     168 |      182 |      0 |   109 |    +0.3% |   -0.184 |      -21.3 |    362 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      457 |       0 |     174 |      183 |      0 |   109 |    +0.3% |   -0.184 |      -17.0 |    360 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      458 |       0 |     174 |      183 |      0 |   109 |    +0.3% |   -0.184 |      -17.0 |    359 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.mult_res[13]$_DFFE_PP_/D
+      460 |       0 |     175 |      183 |      0 |   109 |    +0.3% |   -0.179 |      -16.7 |    359 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      465 |       0 |     177 |      185 |      0 |   111 |    +0.3% |   -0.179 |      -16.4 |    357 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      466 |       0 |     177 |      185 |      0 |   111 |    +0.3% |   -0.179 |      -16.4 |    356 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      470 |       0 |     179 |      185 |      0 |   112 |    +0.3% |   -0.179 |      -16.4 |    356 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      478 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    354 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      479 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    353 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      480 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    353 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      480 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    352 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      481 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    351 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      482 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    350 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      483 |       0 |     180 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -16.1 |    349 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      490 |       0 |     186 |      190 |      0 |   115 |    +0.3% |   -0.179 |      -15.6 |    349 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      492 |       0 |     187 |      191 |      0 |   115 |    +0.3% |   -0.179 |      -15.5 |    347 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      495 |       0 |     187 |      192 |      0 |   116 |    +0.3% |   -0.179 |      -15.4 |    345 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      500 |       0 |     189 |      193 |      0 |   117 |    +0.3% |   -0.179 |      -15.2 |    345 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      501 |       0 |     190 |      193 |      0 |   117 |    +0.3% |   -0.179 |      -15.2 |    343 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      502 |       0 |     190 |      193 |      0 |   117 |    +0.3% |   -0.179 |      -15.2 |    342 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      507 |       0 |     190 |      197 |      0 |   119 |    +0.3% |   -0.179 |      -15.1 |    340 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      508 |       0 |     190 |      197 |      0 |   119 |    +0.3% |   -0.179 |      -15.1 |    339 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      509 |       0 |     190 |      197 |      0 |   119 |    +0.3% |   -0.179 |      -15.1 |    338 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      510 |       0 |     190 |      197 |      0 |   119 |    +0.3% |   -0.179 |      -15.1 |    338 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      513 |       0 |     191 |      200 |      0 |   120 |    +0.3% |   -0.179 |      -14.7 |    336 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      514 |       0 |     191 |      200 |      0 |   120 |    +0.3% |   -0.179 |      -14.7 |    335 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      515 |       0 |     191 |      200 |      0 |   120 |    +0.3% |   -0.179 |      -14.7 |    334 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      518 |       0 |     191 |      201 |      0 |   121 |    +0.3% |   -0.179 |      -14.6 |    332 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      520 |       0 |     191 |      203 |      0 |   121 |    +0.3% |   -0.179 |      -14.6 |    332 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      526 |       0 |     195 |      205 |      0 |   122 |    +0.3% |   -0.179 |      -14.0 |    330 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      527 |       0 |     195 |      205 |      0 |   122 |    +0.3% |   -0.179 |      -14.0 |    329 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      529 |       0 |     195 |      207 |      0 |   122 |    +0.3% |   -0.179 |      -13.9 |    327 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      530 |       0 |     195 |      207 |      0 |   122 |    +0.3% |   -0.179 |      -13.9 |    327 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      531 |       0 |     196 |      207 |      0 |   122 |    +0.3% |   -0.179 |      -13.8 |    325 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      539 |       0 |     198 |      210 |      0 |   124 |    +0.3% |   -0.179 |      -13.6 |    323 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      540 |       0 |     198 |      210 |      0 |   124 |    +0.3% |   -0.179 |      -13.6 |    323 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      540 |       0 |     198 |      210 |      0 |   124 |    +0.3% |   -0.179 |      -13.6 |    322 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      541 |       0 |     198 |      210 |      0 |   124 |    +0.3% |   -0.179 |      -13.6 |    321 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      545 |       0 |     198 |      213 |      0 |   126 |    +0.3% |   -0.179 |      -13.1 |    319 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      546 |       0 |     198 |      213 |      0 |   126 |    +0.3% |   -0.179 |      -13.1 |    318 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      547 |       0 |     198 |      213 |      0 |   126 |    +0.3% |   -0.179 |      -13.1 |    317 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      550 |       0 |     198 |      215 |      0 |   127 |    +0.3% |   -0.179 |      -12.9 |    317 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      552 |       0 |     198 |      217 |      0 |   128 |    +0.3% |   -0.179 |      -12.8 |    315 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      553 |       0 |     198 |      217 |      0 |   128 |    +0.3% |   -0.179 |      -12.8 |    314 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      554 |       0 |     198 |      217 |      0 |   128 |    +0.3% |   -0.179 |      -12.8 |    313 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      555 |       0 |     198 |      217 |      0 |   128 |    +0.3% |   -0.179 |      -12.8 |    312 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      560 |       0 |     199 |      218 |      0 |   130 |    +0.3% |   -0.179 |      -12.7 |    311 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      560 |       0 |     199 |      218 |      0 |   130 |    +0.3% |   -0.179 |      -12.7 |    310 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      565 |       0 |     199 |      222 |      0 |   132 |    +0.3% |   -0.179 |      -12.3 |    308 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      570 |       0 |     201 |      223 |      0 |   133 |    +0.3% |   -0.179 |      -11.9 |    307 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      570 |       0 |     201 |      223 |      0 |   133 |    +0.3% |   -0.179 |      -11.9 |    306 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      571 |       0 |     201 |      223 |      0 |   133 |    +0.3% |   -0.179 |      -11.9 |    305 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      580 |       0 |     205 |      226 |      0 |   135 |    +0.3% |   -0.179 |      -11.6 |    305 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      581 |       0 |     206 |      226 |      0 |   135 |    +0.3% |   -0.179 |      -11.6 |    303 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      589 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    301 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      590 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    301 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      590 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    300 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      591 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    299 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      592 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    298 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      593 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    297 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      594 |       0 |     209 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    296 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      596 |       0 |     210 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    294 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      597 |       0 |     210 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    293 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      598 |       0 |     210 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    292 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      599 |       0 |     210 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    291 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      600 |       0 |     210 |      228 |      0 |   138 |    +0.3% |   -0.179 |      -11.4 |    291 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      604 |       0 |     210 |      231 |      0 |   140 |    +0.3% |   -0.179 |      -11.1 |    289 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      606 |       0 |     211 |      231 |      0 |   140 |    +0.3% |   -0.179 |      -10.7 |    287 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      610 |       0 |     211 |      234 |      0 |   142 |    +0.3% |   -0.179 |      -10.5 |    287 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      612 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    285 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      613 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    284 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      614 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    283 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      615 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    282 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      616 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    281 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      617 |       0 |     211 |      235 |      0 |   143 |    +0.3% |   -0.179 |      -10.4 |    280 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      620 |       0 |     211 |      236 |      0 |   144 |    +0.3% |   -0.179 |      -10.4 |    279 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      620 |       0 |     211 |      236 |      0 |   144 |    +0.3% |   -0.179 |      -10.4 |    278 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      621 |       0 |     211 |      236 |      0 |   144 |    +0.3% |   -0.179 |      -10.4 |    277 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      622 |       0 |     211 |      236 |      0 |   144 |    +0.3% |   -0.179 |      -10.4 |    276 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      623 |       0 |     211 |      236 |      0 |   144 |    +0.3% |   -0.179 |      -10.4 |    275 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      630 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    274 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      630 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    273 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      631 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    272 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      632 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    271 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      633 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    270 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      634 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    269 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      635 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    268 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      636 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    267 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      637 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    266 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      638 |       0 |     215 |      238 |      0 |   145 |    +0.3% |   -0.179 |      -10.0 |    265 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      640 |       0 |     215 |      238 |      0 |   146 |    +0.3% |   -0.179 |      -10.0 |    265 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      641 |       0 |     215 |      241 |      0 |   146 |    +0.3% |   -0.179 |       -9.9 |    263 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      642 |       0 |     215 |      241 |      0 |   146 |    +0.3% |   -0.179 |       -9.9 |    262 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      650 |       0 |     216 |      242 |      0 |   151 |    +0.3% |   -0.179 |       -9.7 |    262 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      653 |       0 |     217 |      245 |      0 |   151 |    +0.3% |   -0.179 |       -9.6 |    260 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      656 |       0 |     219 |      245 |      0 |   151 |    +0.3% |   -0.179 |       -9.4 |    258 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      660 |       0 |     219 |      248 |      0 |   153 |    +0.3% |   -0.179 |       -9.4 |    258 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      667 |       0 |     222 |      252 |      0 |   155 |    +0.3% |   -0.179 |       -9.1 |    256 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      670 |       0 |     224 |      252 |      0 |   155 |    +0.3% |   -0.179 |       -8.9 |    256 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      680 |       0 |     232 |      253 |      0 |   156 |    +0.3% |   -0.179 |       -8.8 |    256 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      681 |       0 |     233 |      253 |      0 |   156 |    +0.3% |   -0.179 |       -8.8 |    254 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      682 |       0 |     233 |      253 |      0 |   156 |    +0.3% |   -0.179 |       -8.8 |    253 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      685 |       0 |     234 |      254 |      0 |   156 |    +0.3% |   -0.179 |       -8.6 |    251 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      686 |       0 |     234 |      254 |      0 |   156 |    +0.3% |   -0.179 |       -8.6 |    250 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      687 |       0 |     234 |      254 |      0 |   156 |    +0.3% |   -0.179 |       -8.6 |    249 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      688 |       0 |     234 |      254 |      0 |   156 |    +0.3% |   -0.179 |       -8.6 |    248 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      690 |       0 |     234 |      254 |      0 |   157 |    +0.3% |   -0.179 |       -8.6 |    248 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      691 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    246 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      692 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    245 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      693 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    244 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      694 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    243 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      695 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    242 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      696 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    241 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      697 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    240 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      698 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    239 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      699 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    238 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      700 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    238 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      700 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    237 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      701 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    236 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      702 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    235 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      703 |       0 |     234 |      257 |      0 |   157 |    +0.3% |   -0.179 |       -8.4 |    234 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      706 |       0 |     234 |      259 |      0 |   158 |    +0.3% |   -0.179 |       -8.1 |    232 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      709 |       0 |     234 |      260 |      0 |   159 |    +0.3% |   -0.179 |       -8.0 |    230 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      710 |       0 |     234 |      260 |      0 |   159 |    +0.3% |   -0.179 |       -8.0 |    230 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      710 |       0 |     234 |      260 |      0 |   159 |    +0.3% |   -0.179 |       -8.0 |    229 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      711 |       0 |     234 |      260 |      0 |   159 |    +0.3% |   -0.179 |       -8.0 |    228 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      720 |       0 |     235 |      263 |      0 |   164 |    +0.3% |   -0.179 |       -7.9 |    228 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      723 |       0 |     236 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.8 |    226 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      725 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    224 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      726 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    223 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      727 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    222 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      728 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    221 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      729 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    220 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      730 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    220 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      730 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    219 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      731 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    218 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      732 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    217 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      733 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    216 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      734 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    215 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      735 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    214 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      736 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    213 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      737 |       0 |     237 |      264 |      0 |   165 |    +0.3% |   -0.179 |       -7.5 |    212 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      740 |       0 |     237 |      265 |      0 |   166 |    +0.3% |   -0.179 |       -7.4 |    212 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      743 |       0 |     238 |      267 |      0 |   167 |    +0.3% |   -0.179 |       -7.2 |    210 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      744 |       0 |     238 |      267 |      0 |   167 |    +0.3% |   -0.179 |       -7.2 |    209 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      748 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    207 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      749 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    206 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      750 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    206 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      750 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    205 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      751 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    204 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      752 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    203 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      753 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    202 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      754 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    201 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      755 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    200 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      756 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    199 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      757 |       0 |     239 |      269 |      0 |   168 |    +0.4% |   -0.179 |       -7.1 |    198 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      760 |       0 |     240 |      269 |      0 |   169 |    +0.4% |   -0.179 |       -6.9 |    198 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      766 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    196 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      767 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    195 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      768 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    194 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      769 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    193 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      770 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    193 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      770 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    192 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      771 |       0 |     241 |      274 |      0 |   171 |    +0.4% |   -0.179 |       -6.7 |    191 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      774 |       0 |     241 |      277 |      0 |   172 |    +0.4% |   -0.179 |       -6.7 |    189 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      777 |       0 |     242 |      281 |      0 |   172 |    +0.4% |   -0.179 |       -6.3 |    187 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      780 |       0 |     242 |      284 |      0 |   173 |    +0.4% |   -0.179 |       -6.1 |    187 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      782 |       0 |     242 |      285 |      0 |   174 |    +0.4% |   -0.179 |       -6.0 |    185 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      785 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    183 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      786 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    182 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      787 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    181 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      788 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    180 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      789 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    179 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      790 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    179 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      790 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    178 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      791 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    177 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      792 |       0 |     242 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.9 |    176 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      795 |       0 |     244 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.6 |    174 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      796 |       0 |     244 |      288 |      0 |   175 |    +0.4% |   -0.179 |       -5.6 |    173 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      800 |       0 |     245 |      288 |      0 |   177 |    +0.4% |   -0.179 |       -5.4 |    173 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      805 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    171 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      806 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    170 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      807 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    169 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      808 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    168 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      809 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    167 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      810 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    167 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      810 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    166 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      811 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    165 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      812 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    164 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      813 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    163 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      814 |       0 |     248 |      289 |      0 |   178 |    +0.4% |   -0.179 |       -5.4 |    162 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      820 |       0 |     252 |      289 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    162 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      821 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    160 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      822 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    159 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      823 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    158 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      824 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    157 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      825 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    156 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      826 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    155 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      827 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    154 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      828 |       0 |     252 |      290 |      0 |   179 |    +0.4% |   -0.179 |       -5.0 |    153 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      830 |       0 |     252 |      292 |      0 |   179 |    +0.4% |   -0.179 |       -4.9 |    153 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      831 |       0 |     253 |      292 |      0 |   179 |    +0.4% |   -0.179 |       -4.8 |    151 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      833 |       0 |     254 |      292 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    149 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      835 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    147 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      836 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    146 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      837 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    145 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      838 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    144 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      839 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    143 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      840 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    143 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      840 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    142 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      841 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    141 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      842 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    140 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      843 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    139 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      844 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    138 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      845 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    137 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      846 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    136 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      847 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    135 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      848 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    134 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      849 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    133 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      850 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    133 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      850 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    132 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      851 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    131 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      852 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    130 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      853 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    129 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      854 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    128 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      855 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    127 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      856 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    126 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      857 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    125 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      858 |       0 |     254 |      293 |      0 |   179 |    +0.4% |   -0.179 |       -4.7 |    124 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_2.macu.result[21]$_DFFE_PP_/D
+      860 |       0 |     255 |      293 |      0 |   179 |    +0.4% |   -0.174 |       -4.4 |    123 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      860 |       0 |     255 |      293 |      0 |   179 |    +0.4% |   -0.174 |       -4.4 |    122 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      861 |       0 |     255 |      293 |      0 |   179 |    +0.4% |   -0.174 |       -4.4 |    121 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      862 |       0 |     255 |      293 |      0 |   179 |    +0.4% |   -0.174 |       -4.4 |    120 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      863 |       0 |     255 |      293 |      0 |   179 |    +0.4% |   -0.174 |       -4.4 |    119 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      867 |       0 |     257 |      293 |      0 |   180 |    +0.4% |   -0.172 |       -4.0 |    117 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.result[21]$_DFFE_PP_/D
+      870 |       0 |     258 |      293 |      0 |   181 |    +0.4% |   -0.185 |       -4.0 |    117 | fdct_zigzag.dct_mod.dct_block_5.dct_unit_6.macu.result[21]$_DFFE_PP_/D
+      871 |       0 |     258 |      295 |      0 |   181 |    +0.4% |   -0.172 |       -3.7 |    115 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_5.macu.result[21]$_DFFE_PP_/D
+      874 |       0 |     258 |      298 |      0 |   182 |    +0.4% |   -0.159 |       -3.4 |    113 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      880 |       0 |     260 |      299 |      0 |   184 |    +0.4% |   -0.159 |       -3.2 |    113 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      887 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    111 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      888 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    110 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      889 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    109 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      890 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    109 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      890 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    108 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      891 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    107 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      892 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    106 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      893 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    105 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      894 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    104 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      895 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    103 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      896 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    102 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      897 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    101 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      898 |       0 |     263 |      303 |      0 |   186 |    +0.4% |   -0.159 |       -3.1 |    100 | fdct_zigzag.dct_mod.dct_block_3.dct_unit_0.macu.result[21]$_DFFE_PP_/D
+      900 |       0 |     264 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |    100 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      901 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     98 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      902 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     97 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      903 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     96 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      904 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     95 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      905 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     94 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      906 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     93 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      907 |       0 |     265 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     92 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      909 |       0 |     266 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     90 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      910 |       0 |     266 |      303 |      0 |   186 |    +0.4% |   -0.151 |       -2.7 |     90 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[20]$_DFFE_PP_/D
+      911 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     88 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      912 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     87 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      913 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     86 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      914 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     85 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      915 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     84 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      916 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     83 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      917 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     82 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      918 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     81 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      919 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     80 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      920 |       0 |     267 |      303 |      0 |   186 |    +0.4% |   -0.142 |       -2.3 |     80 | fdct_zigzag.dct_mod.dct_block_1.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      922 |       0 |     269 |      303 |      0 |   186 |    +0.4% |   -0.130 |       -2.2 |     78 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      923 |       0 |     269 |      303 |      0 |   186 |    +0.4% |   -0.130 |       -2.2 |     77 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      924 |       0 |     269 |      303 |      0 |   186 |    +0.4% |   -0.130 |       -2.2 |     76 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      925 |       0 |     269 |      303 |      0 |   186 |    +0.4% |   -0.130 |       -2.2 |     75 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      926 |       0 |     269 |      303 |      0 |   186 |    +0.4% |   -0.130 |       -2.2 |     74 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      930 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     73 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      930 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     72 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      931 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     71 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      932 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     70 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      933 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     69 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      934 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     68 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      935 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     67 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      936 |       0 |     270 |      304 |      0 |   187 |    +0.4% |   -0.130 |       -2.1 |     66 | fdct_zigzag.dct_mod.dct_block_4.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      938 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     64 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      939 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     63 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      940 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     63 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      940 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     62 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      941 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     61 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      942 |       0 |     271 |      304 |      0 |   187 |    +0.4% |   -0.126 |       -1.8 |     60 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_4.macu.result[21]$_DFFE_PP_/D
+      946 |       0 |     272 |      305 |      0 |   188 |    +0.4% |   -0.123 |       -1.5 |     58 | fdct_zigzag.dct_mod.dct_block_2.dct_unit_5.macu.result[20]$_DFFE_PP_/D
+      949 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     56 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      950 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     56 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      950 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     55 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      951 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     54 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      952 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     53 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      953 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     52 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      954 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     51 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      955 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     50 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      956 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     49 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      957 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     48 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      958 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     47 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      959 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     46 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      960 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     46 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      960 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     45 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      961 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     44 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      962 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     43 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      963 |       0 |     274 |      305 |      0 |   188 |    +0.4% |   -0.106 |       -1.1 |     42 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      968 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     40 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      969 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     39 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      970 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     39 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      970 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     38 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      971 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     37 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      972 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     36 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      973 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     35 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      974 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     34 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      975 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     33 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      976 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     32 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      977 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     31 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      978 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     30 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      979 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     29 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      980 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     29 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      980 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     28 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      981 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     27 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      982 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     26 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      983 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     25 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      984 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     24 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      986 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     23 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      987 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     22 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      988 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     21 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      989 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     20 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      990 |       0 |     274 |      309 |      0 |   190 |    +0.4% |   -0.106 |       -0.9 |     20 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      992 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     18 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      993 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     17 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      994 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     16 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      995 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     15 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      996 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     14 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      997 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     13 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      998 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     12 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+      999 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     11 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1000 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     11 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1000 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |     10 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1001 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |      9 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1002 |       0 |     274 |      310 |      0 |   191 |    +0.4% |   -0.106 |       -0.7 |      8 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1005 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      6 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1006 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      5 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1007 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      4 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1009 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      3 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1010 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      3 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1010 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      2 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1011 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      1 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1012 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1013 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1014 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1015 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1016 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1017 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1018 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1019 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1020 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1020 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1021 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1022 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1023 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1024 |       0 |     274 |      312 |      0 |   192 |    +0.4% |   -0.106 |       -0.6 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1027 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1028 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1029 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1030 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1030 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1031 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1032 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1033 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1034 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1035 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1036 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1037 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1038 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1039 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1040 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1040 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1041 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1042 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1043 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1044 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1045 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1046 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1047 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1048 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1049 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1050 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1050 |       0 |     274 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1052 |       0 |     275 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1053 |       0 |     275 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1054 |       0 |     275 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1056 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1057 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1058 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1059 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1060 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1060 |       0 |     276 |      314 |      0 |   193 |    +0.4% |   -0.106 |       -0.5 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1063 |       0 |     276 |      316 |      0 |   194 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1064 |       0 |     276 |      316 |      0 |   194 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1065 |       0 |     276 |      316 |      0 |   194 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1068 |       0 |     276 |      318 |      0 |   195 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1070 |       0 |     277 |      318 |      0 |   195 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1070 |       0 |     277 |      318 |      0 |   195 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1071 |       0 |     277 |      318 |      0 |   195 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1072 |       0 |     277 |      318 |      0 |   195 |    +0.4% |   -0.106 |       -0.4 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1075 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1076 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1077 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1078 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1079 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1080 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1080 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1081 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1082 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1083 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1084 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1085 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1086 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1087 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1088 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1089 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1090 |       0 |     277 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1091 |       0 |     278 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1092 |       0 |     278 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1093 |       0 |     278 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1094 |       0 |     278 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1096 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1097 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1098 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1099 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1100 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+     1100 |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      0 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+    1100* |       0 |     279 |      319 |      0 |   196 |    +0.4% |   -0.106 |       -0.3 |      7 | fdct_zigzag.dct_mod.dct_block_7.dct_unit_1.macu.mult_res[16]$_DFFE_PP_/D
+    1108* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      7 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1109* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      7 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1110* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      7 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1110* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      7 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1111* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      6 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1112* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      5 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1113* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      5 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    1114* |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      5 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+    final |       0 |     286 |      319 |      0 |   196 |    +0.4% |   -0.047 |       -0.1 |      5 | fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.mult_res[18]$_DFFE_PP_/D
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 319 buffers.
+[INFO RSZ-0051] Resized 286 instances: 286 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 196 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement       1360.3 u
+average displacement        0.0 u
+max displacement           12.0 u
+original HPWL         2372262.3 u
+legalized HPWL        2373412.4 u
+delta HPWL                    0 %
+
+[INFO GRT-0237] Net _000000_ global route wire length: 43.20um
+[INFO GRT-0237] Net _000001_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000005_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000008_ global route wire length: 50.40um
+[INFO GRT-0237] Net _000009_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000010_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000012_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000013_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000015_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000017_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000019_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000022_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000023_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000024_ global route wire length: 43.20um
+[INFO GRT-0237] Net _000028_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000029_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000032_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000034_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000035_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000037_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000039_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000045_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000053_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000054_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000055_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000056_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000058_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000062_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000066_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000068_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000070_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000071_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000073_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000074_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000079_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000080_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000081_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000084_ global route wire length: 72.00um
+[INFO GRT-0237] Net _000087_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000092_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000094_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000097_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000098_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000100_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000101_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000102_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000109_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000110_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000114_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000115_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000116_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000117_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000118_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000119_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000120_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000123_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000124_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000126_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000127_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000130_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000131_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000133_ global route wire length: 165.60um
+[INFO GRT-0237] Net _000136_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000137_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000140_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000141_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000142_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000143_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000144_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000146_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000148_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000150_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000154_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000156_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000160_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000168_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000171_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000174_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000176_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000178_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000182_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000184_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000187_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000188_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000191_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000194_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000195_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000196_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000202_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000204_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000208_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000209_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000212_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000214_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000215_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000216_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000218_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000220_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000223_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000224_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000227_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000230_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000232_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000234_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000235_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000236_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000237_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000238_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000244_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000247_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000249_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000253_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000255_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000257_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000259_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000261_ global route wire length: 57.60um
+[INFO GRT-0237] Net _000267_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000268_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000269_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000270_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000271_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000274_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000278_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000279_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000280_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000282_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000283_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000286_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000290_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000294_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000295_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000298_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000300_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000301_ global route wire length: 86.40um
+[INFO GRT-0237] Net _000302_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000303_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000304_ global route wire length: 50.40um
+[INFO GRT-0237] Net _000306_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000307_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000308_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000313_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000314_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000316_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000318_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000326_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000327_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000328_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000329_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000330_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000333_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000338_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000346_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000374_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000375_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000376_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000377_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000378_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000379_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000380_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000381_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000382_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000383_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000384_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000385_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000386_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000387_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000388_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000389_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000390_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000391_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000392_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000393_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000394_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000395_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000396_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000397_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000398_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000399_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000400_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000401_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000402_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000403_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000404_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000405_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000406_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000407_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000408_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000409_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000410_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000411_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000412_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000413_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000414_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000415_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000416_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000417_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000418_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000419_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000420_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000421_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000422_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000423_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000424_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000425_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000426_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000427_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000428_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000429_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000430_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000431_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000432_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000433_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000434_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000435_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000436_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000437_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000438_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000439_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000440_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000441_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000442_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000443_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000444_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000445_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000446_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000447_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000448_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000449_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000450_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000451_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000452_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000453_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000454_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000455_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000456_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000457_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000458_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000459_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000460_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000461_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000462_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000463_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000464_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000465_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000466_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000467_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000468_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000469_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000470_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000471_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000472_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000473_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000474_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000475_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000476_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000477_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000478_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000479_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000480_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000481_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000482_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000483_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000484_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000485_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000486_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000487_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000488_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000489_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000490_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000491_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000492_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000493_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000494_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000495_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000496_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000497_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000498_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000499_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000500_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000501_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000502_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000503_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000504_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000505_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000506_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000507_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000508_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000509_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000510_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000511_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000512_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000513_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000514_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000515_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000516_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000517_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000518_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000519_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000520_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000521_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000522_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000523_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000524_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000525_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000526_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000527_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000528_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000529_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000530_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000531_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000532_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000533_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000534_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000535_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000536_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000537_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000538_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000539_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000540_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000541_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000542_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000543_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000544_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000545_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000546_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000547_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000548_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000549_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000550_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000551_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000552_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000553_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000554_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000555_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000556_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000557_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000558_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000559_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000560_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000561_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000562_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000563_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000564_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000565_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000566_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000567_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000568_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000569_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000570_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000571_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000572_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000573_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000574_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000575_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000576_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000577_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000578_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000579_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000580_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000581_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000582_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000583_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000584_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000585_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000586_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000587_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000588_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000589_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000590_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000591_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000592_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000593_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000594_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000595_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000596_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000597_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000598_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000599_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000600_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000601_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000602_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000603_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000604_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000605_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000606_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000607_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000608_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000609_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000610_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000611_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000612_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000613_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000614_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000615_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000616_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000617_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000618_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000619_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000620_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000621_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000622_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000623_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000624_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000625_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000626_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000627_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000628_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000629_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000630_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000631_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000632_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000633_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000634_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000635_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000636_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000637_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000638_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000639_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000640_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000641_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000642_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000643_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000644_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000645_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000646_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000647_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000648_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000649_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000650_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000651_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000652_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000653_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000654_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000655_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000656_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000657_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000658_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000659_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000660_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000661_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000662_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000663_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000664_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000665_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000666_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000667_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000668_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000669_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000670_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000671_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000672_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000673_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000674_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000675_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000676_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000677_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000678_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000679_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000680_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000681_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000682_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000683_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000684_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000685_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000686_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000687_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000688_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000689_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000690_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000691_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000692_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000693_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000694_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000695_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000696_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000697_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000698_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000699_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000700_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000701_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000702_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000703_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000704_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000705_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000706_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000707_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000708_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000709_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000710_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000711_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000712_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000713_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000714_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000715_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000716_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000717_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000718_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000719_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000720_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000721_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000722_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000723_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000724_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000725_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000726_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000727_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000728_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000729_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000730_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000731_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000732_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000733_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000734_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000735_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000736_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000737_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000738_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000739_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000740_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000741_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000742_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000743_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000744_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000745_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000746_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000747_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000748_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000749_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000750_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000751_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000752_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000753_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000754_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000755_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000756_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000757_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000758_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000759_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000760_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000761_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000762_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000763_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000764_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000765_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000766_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000767_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000768_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000769_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000770_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000771_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000772_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000773_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000774_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000775_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000776_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000777_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000778_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000779_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000780_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000781_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000782_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000783_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000784_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000785_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000786_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000787_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000788_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000789_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000790_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000791_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000792_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000793_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000794_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000795_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000796_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000797_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000798_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000799_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000800_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000801_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000802_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000803_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000804_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000805_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000806_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000807_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000808_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000809_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000810_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000811_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000812_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000813_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000814_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000815_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000816_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000817_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000818_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000819_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000820_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000821_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000822_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000823_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000824_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000825_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000826_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000827_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000828_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000829_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000830_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000831_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000832_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000833_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000834_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000835_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000836_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000837_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000838_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000839_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000840_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000841_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000842_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000843_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000844_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000845_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000846_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000847_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000848_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000849_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000850_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000851_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000852_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000853_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000854_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000855_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000856_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000857_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000858_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000859_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000860_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000861_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000862_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000863_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000864_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000865_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000866_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000867_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000868_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000869_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000870_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000871_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000872_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000873_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000874_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000875_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000876_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000877_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000878_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000879_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000880_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000881_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000882_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000883_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000884_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000885_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000886_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000887_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000888_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000889_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000890_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000891_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000892_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000893_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000894_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000895_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000896_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000897_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000898_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000899_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000900_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000901_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000902_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000903_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000904_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000905_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000906_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000907_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000908_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000909_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000910_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000911_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000912_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000913_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000914_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000915_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000916_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000917_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000918_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000919_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000920_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000921_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000922_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000923_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000924_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000925_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000926_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000927_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000928_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000929_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000930_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000931_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000932_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000933_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000934_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000935_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000936_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000937_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000938_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000939_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000940_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000941_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000942_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000943_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000944_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000945_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000946_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000947_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000948_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000949_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000950_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000951_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000952_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000953_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000954_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000955_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000956_ global route wire length: 36.00um
+[INFO GRT-0237] Net _000957_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000958_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000959_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000960_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000961_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000962_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000963_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000964_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000965_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000966_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000967_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000968_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000969_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000970_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000971_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000972_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000973_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000974_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000975_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000976_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000977_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000978_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000979_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000980_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000981_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000982_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000983_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000984_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000985_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000986_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000987_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000988_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000989_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000990_ global route wire length: 21.60um
+[INFO GRT-0237] Net _000991_ global route wire length: 28.80um
+[INFO GRT-0237] Net _000992_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000993_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000994_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000995_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000996_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000997_ global route wire length: 0.00um
+[INFO GRT-0237] Net _000998_ global route wire length: 14.40um
+[INFO GRT-0237] Net _000999_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001000_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001001_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001002_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001003_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001004_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001005_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001006_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001007_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001008_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001009_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001010_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001011_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001012_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001013_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001014_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001015_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001016_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001017_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001018_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001019_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001020_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001021_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001022_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001023_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001024_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001025_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001026_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001027_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001028_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001029_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001030_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001031_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001032_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001033_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001034_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001035_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001036_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001037_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001038_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001039_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001040_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001041_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001042_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001043_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001044_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001045_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001046_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001047_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001048_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001049_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001050_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001051_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001052_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001053_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001054_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001055_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001056_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001057_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001058_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001059_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001060_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001061_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001062_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001063_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001064_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001065_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001066_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001071_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001087_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001088_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001089_ global route wire length: 43.20um
+[INFO GRT-0237] Net _001096_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001098_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001100_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001101_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001105_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001115_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001117_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001119_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001123_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001127_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001128_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001130_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001131_ global route wire length: 43.20um
+[INFO GRT-0237] Net _001137_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001139_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001140_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001142_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001143_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001144_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001145_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001147_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001148_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001151_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001152_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001153_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001158_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001162_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001167_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001168_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001170_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001178_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001183_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001184_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001187_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001190_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001192_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001193_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001195_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001196_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001202_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001206_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001209_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001210_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001211_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001213_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001215_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001216_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001217_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001218_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001221_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001231_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001232_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001239_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001241_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001242_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001244_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001249_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001252_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001254_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001263_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001264_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001266_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001271_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001272_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001273_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001275_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001276_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001282_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001285_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001288_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001290_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001293_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001296_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001301_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001306_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001310_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001321_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001322_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001327_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001330_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001333_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001334_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001348_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001349_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001360_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001370_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001371_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001382_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001383_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001385_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001387_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001388_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001391_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001396_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001412_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001413_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001414_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001420_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001422_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001423_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001425_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001427_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001428_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001430_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001433_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001439_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001445_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001446_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001452_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001456_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001458_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001459_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001464_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001465_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001469_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001472_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001474_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001480_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001481_ global route wire length: 36.00um
+[INFO GRT-0237] Net _001484_ global route wire length: 43.20um
+[INFO GRT-0237] Net _001487_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001491_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001498_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001500_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001501_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001506_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001508_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001511_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001512_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001514_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001516_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001517_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001519_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001520_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001525_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001530_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001543_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001545_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001547_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001550_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001556_ global route wire length: 21.60um
+[INFO GRT-0237] Net _001560_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001563_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001566_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001572_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001581_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001582_ global route wire length: 0.00um
+[INFO GRT-0237] Net _001583_ global route wire length: 28.80um
+[INFO GRT-0237] Net _001584_ global route wire length: 43.20um
+[INFO GRT-0237] Net _001585_ global route wire length: 14.40um
+[INFO GRT-0237] Net _001587_ global route wire length: 36.00um
+[INFO GRT-0237] message limit (1000) reached. This message will no longer print.
+Loading design from runs/jpeg_v2/clustered.odb...
+$ source pdk/setRC.tcl
+$ read_sdc designs/jpeg_v2/constraints.sdc
+$ source pdk/setRC.tcl
+$ read_sdc designs/jpeg_v2/constraints.sdc
+$ clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+$ estimate_parasitics -placement
+$ detailed_placement
+$ global_route
+$ estimate_parasitics -global_routing
+$ repair_design
+$ global_route -start_incremental
+$ detailed_placement
+$ global_route -end_incremental
+$ estimate_parasitics -global_routing
+$ repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose -skip_gate_cloning
+$ global_route -start_incremental
+$ detailed_placement
+$ global_route -end_incremental
+$ global_route -start_incremental
+$ global_route -end_incremental
+$ estimate_parasitics -global_routing
+$ report_clock_min_period > /tmp/min_period_jpeg_v2.txt
+$ report_tns > /tmp/tns_jpeg_v2.txt
+$ report_cts -out_file /tmp/cts_jpeg_v2.txt
+Report written to result/jpeg_v2_report.json
+{
+  "design": "jpeg_v2",
+  "instance_count": 77197,
+  "total_area": 904910.23,
+  "total_ffs": 4342,
+  "mbff_count": 19,
+  "single_ff_count": 4323,
+  "mbff_ratio": 0.004375863657300783,
+  "mbff_masters": {
+    "sg13g2_dfrbpq_H2V2X_1": 15,
+    "sg13g2_dfrbpq_V2X_1": 4
+  },
+  "empty_pins": 7,
+  "clock_buffer_count": 373,
+  "sink_count": 4342,
+  "total_wirelength": 3657.18,
+  "static_power": 1.1e-05,
+  "total_power": 0.255921,
+  "displacement": {
+    "total_um": 172709.33,
+    "max_um": 14.09,
+    "mean_um": 2.24
+  },
+  "missing_comb_cells": [],
+  "added_comb_cells": [],
+  "half_connected_pin_pairs": 0,
+  "expected_clock_period": 5.13,
+  "total_negative_slack": -0.41
+}

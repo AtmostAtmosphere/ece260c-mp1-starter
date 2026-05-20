@@ -1,0 +1,56 @@
+{
+  "mbff_0": [
+    "dp.pcreg.q\\[1\\]$_DFFE_PP0P_",
+    "dp.pcreg.q\\[2\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[3\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[4\\]$_DFF_PP0_"
+  ],
+  "mbff_1": [
+    "dp.pcreg.q\\[0\\]$_DFFE_PP0P_",
+    "dp.pcreg.q\\[5\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[6\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[7\\]$_DFF_PP0_"
+  ],
+  "mbff_2": [
+    "dp.pcreg.q\\[11\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[13\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[14\\]$_DFF_PP0_",
+    0
+  ],
+  "mbff_3": [
+    "dp.pcreg.q\\[10\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[12\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[8\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[9\\]$_DFF_PP0_"
+  ],
+  "mbff_4": [
+    "dp.pcreg.q\\[18\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[19\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[20\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[21\\]$_DFF_PP0_"
+  ],
+  "mbff_5": [
+    "dp.pcreg.q\\[15\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[16\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[17\\]$_DFF_PP0_",
+    0
+  ],
+  "mbff_6": [
+    "dp.pcreg.q\\[22\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[23\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[24\\]$_DFF_PP0_",
+    0
+  ],
+  "mbff_7": [
+    "dp.pcreg.q\\[25\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[26\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[27\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[28\\]$_DFF_PP0_"
+  ],
+  "mbff_8": [
+    "dp.pcreg.q\\[29\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[30\\]$_DFF_PP0_",
+    "dp.pcreg.q\\[31\\]$_DFF_PP0_",
+    0
+  ]
+}

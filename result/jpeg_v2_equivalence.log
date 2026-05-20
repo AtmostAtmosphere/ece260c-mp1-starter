@@ -1,0 +1,31 @@
+OpenROAD 26Q1-1636-g52ff2a5ea5 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ORD-0039] .openroad ignored with -python
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 155, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 156, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 157, wireload 1.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 158, wireload 2.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 159, wireload 5.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 160, wireload 10.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 161, wireload 30.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 162, wireload 50.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 163, wireload 100.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 164, wireload 200.0k not found.
+[WARNING STA-1187] pdk/lib/sg13g2_stdcell_typ_1p20V_25C_mbff.lib line 165, wireload 500.0k not found.
+[WARNING ORD-2056] The following 7 liberty cell(s) do not have LEF masters and will be marked as dont-use:
+  sg13g2_dfrbp_H2V2X_1
+  sg13g2_dfrbp_H2V2X_2
+  sg13g2_dfrbp_V2X_1
+  sg13g2_dfrbp_V2X_2
+  sg13g2_dfrbp_V4X_1
+  sg13g2_dfrbp_V4X_2
+  sg13g2_dfrbpq_H2V2X_2
+
+Logical Equivalence Check Results:
+  Passed: 68
+  Failed: 0
+  Report written to: runs/jpeg_v2/equivalence.json
+
+All checks passed!

@@ -1,0 +1,28 @@
+{
+  "design": "riscv32i_v2",
+  "instance_count": 9331,
+  "total_area": 138783.46,
+  "total_ffs": 1033,
+  "mbff_count": 9,
+  "single_ff_count": 1024,
+  "mbff_ratio": 0.008712487899322363,
+  "mbff_masters": {
+    "sg13g2_dfrbpq_H2V2X_1": 9
+  },
+  "empty_pins": 4,
+  "clock_buffer_count": 77,
+  "sink_count": 1033,
+  "total_wirelength": 520.14,
+  "static_power": 2e-06,
+  "total_power": 0.013382,
+  "displacement": {
+    "total_um": 28330.87,
+    "max_um": 16.16,
+    "mean_um": 3.04
+  },
+  "missing_comb_cells": [],
+  "added_comb_cells": [],
+  "half_connected_pin_pairs": 0,
+  "expected_clock_period": 4.79,
+  "total_negative_slack": -3.94
+}

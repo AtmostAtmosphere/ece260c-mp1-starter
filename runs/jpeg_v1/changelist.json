@@ -1,0 +1,104 @@
+{
+  "mbff_0": [
+    "fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_",
+    "fdct_zigzag.dct_mod.dddcnt$_DFFE_PN1P_",
+    "fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.douten$_DFFE_PN0P_"
+  ],
+  "mbff_1": [
+    "fdct_zigzag.dct_mod.ddin\\[3\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.ddin\\[4\\]$_DFFE_PN0P_"
+  ],
+  "mbff_2": [
+    "fdct_zigzag.dct_mod.ddin\\[1\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.ddin\\[2\\]$_DFFE_PN0P_"
+  ],
+  "mbff_3": [
+    "qnr.qnt_cnt\\[0\\]$_DFFE_PN0P_",
+    "qnr.qnt_cnt\\[1\\]$_DFFE_PN0P_",
+    "qnr.qnt_cnt\\[2\\]$_DFFE_PN0P_",
+    "qnr.qnt_cnt\\[5\\]$_DFFE_PN0P_"
+  ],
+  "mbff_4": [
+    "fdct_zigzag.dct_mod.dgo$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.go$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.sample_cnt\\[0\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.sample_cnt\\[1\\]$_DFFE_PN0P_"
+  ],
+  "mbff_5": [
+    "fdct_zigzag.dct_mod.sample_cnt\\[2\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.sample_cnt\\[3\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.sample_cnt\\[4\\]$_DFFE_PN0P_",
+    "fdct_zigzag.dct_mod.sample_cnt\\[5\\]$_DFFE_PN0P_"
+  ],
+  "mbff_6": [
+    "qnr.dep\\[4\\]$_DFFE_PN0P_",
+    "qnr.dep\\[5\\]$_DFFE_PN0P_",
+    "qnr.dep\\[6\\]$_DFFE_PN0P_",
+    "rle.rle.rlen\\[2\\]$_DFFE_PN0P_"
+  ],
+  "mbff_7": [
+    "qnr.dep\\[0\\]$_DFFE_PN0P_",
+    "qnr.dep\\[1\\]$_DFFE_PN0P_"
+  ],
+  "mbff_8": [
+    "qnr.dep\\[10\\]$_DFFE_PN0P_",
+    "qnr.dep\\[11\\]$_DFFE_PN0P_",
+    "qnr.dep\\[8\\]$_DFFE_PN0P_",
+    "qnr.dep\\[9\\]$_DFFE_PN0P_"
+  ],
+  "mbff_9": [
+    "qnr.dep\\[12\\]$_DFFE_PN0P_",
+    "qnr.dep\\[13\\]$_DFFE_PN0P_",
+    "qnr.dep\\[14\\]$_DFFE_PN0P_",
+    "qnr.dep\\[15\\]$_DFFE_PN0P_"
+  ],
+  "mbff_10": [
+    "rle.ddstrb$_DFF_PN0_",
+    "rle.rle.dcterm$_DFFE_PN0P_",
+    "rle.rle.state$_DFFE_PN0P_",
+    0
+  ],
+  "mbff_11": [
+    "qnr.dep\\[7\\]$_DFFE_PN0P_",
+    "rle.rle.den$_DFFE_PN0P_",
+    "rle.rle.rlen\\[3\\]$_DFFE_PN0P_",
+    0
+  ],
+  "mbff_12": [
+    "qnr.qnt_cnt\\[3\\]$_DFFE_PN0P_",
+    "qnr.qnt_cnt\\[4\\]$_DFFE_PN0P_",
+    "rle.rz4.deno$_DFFE_PN0P_",
+    0
+  ],
+  "mbff_13": [
+    "rle.rz3.deno$_DFFE_PN0P_",
+    "rle.rz4.den$_DFFE_PN0P_",
+    "rle.rz4.state$_DFFE_PN0P_",
+    0
+  ],
+  "mbff_14": [
+    "rle.rle.size\\[0\\]$_DFFE_PN0P_",
+    "rle.rle.size\\[1\\]$_DFFE_PN0P_",
+    "rle.rle.size\\[2\\]$_DFFE_PN0P_",
+    "rle.rle.size\\[3\\]$_DFFE_PN0P_"
+  ],
+  "mbff_15": [
+    "rle.rle.rlen\\[0\\]$_DFFE_PN0P_",
+    "rle.rle.rlen\\[1\\]$_DFFE_PN0P_",
+    "rle.rz1.den$_DFFE_PN0P_",
+    "rle.rz1.state$_DFFE_PN0P_"
+  ],
+  "mbff_16": [
+    "rle.rz2.deno$_DFFE_PN0P_",
+    "rle.rz3.den$_DFFE_PN0P_",
+    "rle.rz3.state$_DFFE_PN0P_",
+    0
+  ],
+  "mbff_17": [
+    "rle.rz1.deno$_DFFE_PN0P_",
+    "rle.rz2.den$_DFFE_PN0P_",
+    "rle.rz2.state$_DFFE_PN0P_",
+    0
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "design": "ibex_v2",
+  "results": {
+    "passed_count": 1784,
+    "failed_count": 0,
+    "all_passed": true,
+    "errors": []
+  }
+}
